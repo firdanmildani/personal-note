@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+.nav-bg{
+  background-color: rgb(255, 200, 18);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  min-height: 80px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.layout {
   min-height: 100vh;
+}
+
+.input-form {
+  position: relative;
+  max-width: 600px;
+  margin: 35px auto 50px auto;
+  background: #fff;
+  padding: 10px;
+  border-radius: 7px;
+  box-shadow: 0 1px 7px rgb(128, 128, 128);
+}
+
+.input-form input {
+  width: 100%;
+  border: none;
+  padding: 4px 10px;
+  margin-bottom: 20px;
+  outline: none;
+  font-size: 1rem;
+  resize: none;
+}
+.input-form textarea {
+  width: 100%;
+  height: auto;
+  max-height: 100px;
+  border: none;
+  padding: 4px 10px;
+  outline: none;
+  font-size: 1rem;
+  resize: none;
+}
+
+.input-form button {
+  position: absolute;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  right: 18px;
+  bottom: -18px;
+  background: rgb(255, 200, 18);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgb(165, 165, 165);
+  cursor: pointer;
+  outline: none;
 }
 
-.App-link {
-  color: #61dafb;
+.masonry {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.masonry-item {
+ margin: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.note {
+  display: inline-block;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgb(175, 175, 175);
+  padding: 20px;
+  width: 235px;
+  /* margin: 10px; */
+  /* float: left; */
+  /* margin-right: 0; */
+  /* width: 100%; */
+  /* break-inside: avoid-column; */
+}
+
+
+.note h1 {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+}
+
+.note span{
+  font-size: 12px;
+}
+
+.note p {
+  font-size: 1rem;
+  color: #000000;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+}
+
+.note button {
+  position: relative;
+  float: right;
+  color: #f88651;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+
+@media only screen and (max-width: 600px) {
+ .note {
+  width: 100%;
+ }
 }
